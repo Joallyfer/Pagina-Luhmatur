@@ -49,7 +49,8 @@ export default function TestimonialsSection() {
             href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-pink-500 hover:bg-pink-600 text-white px-10 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
+            className="inline-block bg-pink-500 hover:bg-pink-600 text-white px-6 sm:px-10 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
+
           >
             Seja o próximo a viver essa experiência!
           </a>
