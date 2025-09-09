@@ -287,7 +287,8 @@ export default function TripsSection() {
             href={whatsappLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full text-center bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 shadow hover:shadow-md whitespace-nowrap"
+            className="w-full text-center bg-gradient-to-r from-pink-500 to-pink-600 hover:from-pink-600 hover:to-pink-700 text-white px-6 py-3 rounded-lg text-sm font-semibold transition-all duration-300 shadow hover:shadow-md"
+
           >
             Consultar Valores e Vagas
           </a>
