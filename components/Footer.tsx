@@ -5,9 +5,8 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="bg-gray-800 text-white py-12">
-      {/* Removido o px-6 daqui */}
-      <div className="container mx-auto"> 
-        <div className="grid md:grid-cols-4 gap-8 px-6"> {/* Adicionado px-6 AQUI */}
+      <div className="container mx-auto px-6"> 
+        <div className="grid md:grid-cols-4 gap-8">
           {/* Coluna 1: Logo e Descrição */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
@@ -16,14 +15,20 @@ export default function Footer() {
               </div>
               <h3 className="font-['Pacifico'] text-xl text-pink-400">Luhmatur</h3>
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-gray-300 mb-4 break-words">
               Conectando você aos melhores destinos com segurança, conforto e experiências inesquecíveis há mais de 15 anos.
             </p>
-            <div className="flex space-x-3">
-              <a href="https://web.facebook.com/luhmatur/?locale=pt_BR&_rdc=1&_rdr" className="w-8 h-8 bg-gray-700 hover:bg-pink-500 text-white rounded-full flex items-center justify-center transition-colors cursor-pointer">
+            <div className="flex space-x-3 flex-wrap">
+              <a
+                href="https://web.facebook.com/luhmatur/?locale=pt_BR&_rdc=1&_rdr"
+                className="w-8 h-8 bg-gray-700 hover:bg-pink-500 text-white rounded-full flex items-center justify-center transition-colors cursor-pointer"
+              >
                 <i className="ri-facebook-fill text-sm"></i>
               </a>
-              <a href="https://www.instagram.com/luhmaturturismo/" className="w-8 h-8 bg-gray-700 hover:bg-pink-500 text-white rounded-full flex items-center justify-center transition-colors cursor-pointer">
+              <a
+                href="https://www.instagram.com/luhmaturturismo/"
+                className="w-8 h-8 bg-gray-700 hover:bg-pink-500 text-white rounded-full flex items-center justify-center transition-colors cursor-pointer"
+              >
                 <i className="ri-instagram-line text-sm"></i>
               </a>
             </div>
@@ -84,7 +89,7 @@ export default function Footer() {
                 <i className="ri-mail-line text-pink-400 mr-2"></i>
                 <a 
                   href="mailto:luhmaturturismo@gmail.com?subject=Contato%20pelo%20Site%20Luhmatur" 
-                  className="text-gray-300 hover:text-pink-400 transition-colors"
+                  className="text-gray-300 hover:text-pink-400 transition-colors break-words"
                 >
                   luhmaturturismo@gmail.com
                 </a>
@@ -94,8 +99,8 @@ export default function Footer() {
         </div>
 
         {/* Direitos Autorais */}
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center px-6"> {/* Adicionado px-6 AQUI também */}
-          <p className="text-gray-400">
+        <div className="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p className="text-gray-400 break-words">
             © 2025 Luhmatur - Todos os direitos reservados 
           </p>
         </div>
