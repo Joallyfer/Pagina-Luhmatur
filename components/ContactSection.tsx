@@ -101,7 +101,7 @@ export default function ContactSection() {
 
         <div className="mt-16 text-center">
           <a
-            href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
+            href="https://wa.me/5541997910450?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full shadow-lg transition-colors cursor-pointer"

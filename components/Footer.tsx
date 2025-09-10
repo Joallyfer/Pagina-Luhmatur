@@ -75,12 +75,12 @@ export default function Footer() {
               <div className="flex items-center">
                 <i className="ri-whatsapp-line text-pink-400 mr-2"></i>
                 <a 
-                  href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens" 
+                  href="https://wa.me/5541997910450?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="text-gray-300 hover:text-pink-400 transition-colors"
                 >
-                  (41) 3588-9114
+                  (41) 99791-0450
                 </a>
               </div>
 

@@ -72,7 +72,7 @@ export default function RootLayout({
 
         {/* Botão flutuante do WhatsApp */}
         <Link
-          href="https://wa.me/554135889114?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20as%20viagens"
+          href="https://wa.me/5541997910450?text=Ol%C3%A1%20gostaria%20de%20saber%20mais%20sobre%20as%20viagens"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Falar no WhatsApp"

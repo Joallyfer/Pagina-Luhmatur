@@ -12,7 +12,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <h1 className="font-['Pacifico'] text-2xl text-pink-600">Luhmatur</h1>
+            <Link href="/">
+              <h1 className="font-['Pacifico'] text-2xl text-pink-600">Luhmatur</h1>
+            </Link>
           </div>
           
           {/* Navegação Desktop */}
@@ -36,7 +38,7 @@ export default function Header() {
 
           {/* CTA Desktop (some no mobile) */}
           <a 
-            href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
+            href="https://wa.me/5541997910450?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:inline-flex items-center bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full transition-colors whitespace-nowrap"

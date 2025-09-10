@@ -260,7 +260,7 @@ export default function TripsSection() {
 
   // --- CARD UNIFICADO PARA TODOS OS ROTEIROS ---
   const renderTripCardWithDates = (trip: { name: string; imageFile: string; dates: string[] }, index: number) => {
-    const whatsappLink = `https://wa.me/554135889114?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre a viagem para ${trip.name}!`)}`;
+    const whatsappLink = `https://wa.me/5541997910450?text=${encodeURIComponent(`Olá, gostaria de saber mais sobre a viagem para ${trip.name}!`)}`;
 
     return (
       <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col justify-between hover:shadow-xl transition-all duration-300 transform hover:scale-105">

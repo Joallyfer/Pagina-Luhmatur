@@ -46,7 +46,7 @@ export default function TestimonialsSection() {
 
         <div className="text-center mt-16">
           <a 
-            href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
+            href="https://wa.me/5541997910450?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-pink-500 hover:bg-pink-600 text-white px-6 sm:px-10 py-4 rounded-full text-lg font-semibold transition-all transform hover:scale-105 shadow-lg whitespace-nowrap cursor-pointer"
