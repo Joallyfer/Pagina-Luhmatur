@@ -37,12 +37,13 @@ export default function ContactSection() {
                     <i className="ri-whatsapp-line text-pink-600 text-xl"></i>
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-800">WhatsApp</div>
-                    <a href="https://wa.me/554135889114?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600 transition-colors">
-                      (41) 3588-9114
+                    <div className="font-semibold text-gray-800">WhatsApp Mara</div>
+                    <a href="https://wa.me/5541997910450?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20sobre%20viagens" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-600 transition-colors">
+                      (41)99791-0450
                     </a>
                   </div>
                 </div>
+                
                 <div className="flex items-center space-x-4">
                   <div className="w-12 h-12 bg-pink-100 rounded-2xl flex items-center justify-center">
                     <i className="ri-mail-line text-pink-600 text-xl"></i>
@@ -109,6 +110,7 @@ export default function ContactSection() {
             <span className="font-medium">Planeje a sua viagem agora!</span>
           </a>
         </div>
+        
       </div>
     </section>
   );

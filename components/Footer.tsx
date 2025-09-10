@@ -84,6 +84,7 @@ export default function Footer() {
                 </a>
               </div>
 
+              
               {/* E-mail Clicável */}
               <div className="flex items-center">
                 <i className="ri-mail-line text-pink-400 mr-2"></i>
