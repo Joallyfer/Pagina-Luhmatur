@@ -1,4 +1,4 @@
-import Image from 'next/image'; // --- ALTERAÇÃO 1: Importar o componente Image ---
+import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { FaWhatsapp } from 'react-icons/fa';
 
@@ -12,6 +12,7 @@ export async function generateStaticParams() {
   }));
 }
 
+// A CORREÇÃO PRINCIPAL ESTÁ AQUI NA TIPAGEM DOS PARÂMETROS
 export default function PaginaViagem({ params }: { params: { slug: string } }) {
   const viagem = getViagemPeloSlug(params.slug);
 
@@ -33,10 +34,9 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
           </h1>
 
           <div className="grid lg:grid-cols-2 gap-12 items-stretch">
-            {/* LADO ESQUERDO - ROTEIRO OU DESCRIÇÃO */}
+            {/* LADO ESQUERDO */}
             <div className="flex flex-col">
               {viagem.detalhes ? (
-                // Card principal para quando HÁ detalhes
                 <div className="bg-white p-8 rounded-2xl shadow-lg text-gray-700 flex-1 flex flex-col">
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">
                     Roteiro
@@ -47,7 +47,6 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
                   />
                 </div>
               ) : (
-                // Card para quando NÃO HÁ detalhes (mostra a descrição)
                 <div className="bg-white p-8 rounded-2xl shadow-lg text-gray-700 flex-1 flex flex-col">
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">
                     Sobre este Roteiro
@@ -57,19 +56,17 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
               )}
             </div>
 
-            {/* LADO DIREITO - IMAGEM E DESCRIÇÃO (CONDICIONAL) */}
+            {/* LADO DIREITO */}
             <div className="flex flex-col gap-6">
-              {/* --- ALTERAÇÃO 2: Substituir <img> por <Image> --- */}
               <Image
                 src={viagem.imageFile}
                 alt={`Imagem principal de ${viagem.name}`}
-                width={800} // IMPORTANTE: Ajuste para a largura real da sua imagem
-                height={600} // IMPORTANTE: Ajuste para a altura real da sua imagem
+                width={800} // Ajuste para a largura real da sua imagem
+                height={600} // Ajuste para a altura real da sua imagem
                 className="w-full h-auto object-cover rounded-3xl shadow-xl"
-                priority // Adicione 'priority' para a imagem principal da página carregar mais rápido
+                priority
               />
               
-              {/* Mostra a descrição aqui somente se o roteiro detalhado já estiver na esquerda */}
               {viagem.detalhes && (
                 <div className="bg-white p-6 rounded-2xl shadow-lg text-gray-700 flex-1">
                   <h2 className="text-3xl font-bold text-gray-800 mb-4">
@@ -81,7 +78,7 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
             </div>
           </div>
 
-          {/* BOTÃO DE WHATSAPP ESTÁTICO */}
+          {/* BOTÃO DE WHATSAPP */}
           <div className="text-center mt-16">
             <a
               href={whatsappLink}
