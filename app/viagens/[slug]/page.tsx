@@ -12,9 +12,10 @@ export function generateStaticParams() {
   }));
 }
 
-// A CORREÇÃO PRINCIPAL ESTÁ AQUI NA TIPAGEM DOS PARÂMETROS
-export default function PaginaViagem({ params }: { params: { slug: string } }) {
-  const viagem = getViagemPeloSlug(params.slug);
+// ✅ CORREÇÃO APLICADA AQUI
+export default async function PaginaViagem({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const viagem = getViagemPeloSlug(slug);
 
   if (!viagem) {
     notFound();
@@ -61,8 +62,8 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
               <Image
                 src={viagem.imageFile}
                 alt={`Imagem principal de ${viagem.name}`}
-                width={800} // Ajuste para a largura real da sua imagem
-                height={600} // Ajuste para a altura real da sua imagem
+                width={800}
+                height={600}
                 className="w-full h-auto object-cover rounded-3xl shadow-xl"
                 priority
               />
@@ -82,7 +83,7 @@ export default function PaginaViagem({ params }: { params: { slug: string } }) {
           <div className="text-center mt-16">
             <a
               href={whatsappLink}
-              target="_blank"
+              
               rel="noopener noreferrer"
               className="inline-flex items-center gap-4 bg-green-500 hover:bg-green-600 text-white font-bold text-xl py-4 px-8 rounded-full shadow-lg transition-transform transform hover:scale-105"
             >
