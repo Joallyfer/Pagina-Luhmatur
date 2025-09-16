@@ -6,7 +6,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { getViagemPeloSlug, todasAsViagens } from '@/lib/data/dadosviagens';
 
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return todasAsViagens.map((viagem) => ({
     slug: viagem.slug,
   }));
